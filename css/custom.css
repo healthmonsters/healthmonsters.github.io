@@ -2,6 +2,12 @@ body {
   background: #27ae60; font-family: 'Montserrat';
 }
 
+#its-a-wrap {
+  max-width: 280px;
+  display: block;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -20,6 +26,15 @@ label {
 
 label {
   font-size: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+form {
+  max-width: 300px;
+  left: 0;
 }
 
 .button,
@@ -53,12 +68,6 @@ input[type="button"]:focus {
   font-size: 100% !important;
 }
 
-#its-a-wrap {
-  max-width: 280px;
-  display: block;
-  margin: 0 auto;
-}
-
 /* Larger than mobile */
 @media (min-width: 400px) {
   p {
@@ -68,13 +77,17 @@ input[type="button"]:focus {
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   #its-a-wrap {
     max-width: 600px;
+  }
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    max-width: 150px;
   }
 }
 
