@@ -3,11 +3,56 @@ a {
   color: #fff;
 }
 
-a.sub {
+a.sub,
+label {
   color: #a9dfbf;
 }
+  a.sub {
+    padding: 0 15px;
+  }
+  a.sub:hover {
+    color: #fff;
+  }
 
-p {
+label {
+  font-size: 100%;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: #ad5f1a;
+  color: #fff;
+  border: none;
+}
+
+.button {
+  font-family: 'Dosis';
+  font-weight: 700;
+  font-size: 100% !important;
+}
+
+#its-a-wrap {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Larger than mobile */
@@ -15,4 +60,26 @@ p {
   p {
     font-size: 150%;
   }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  #its-a-wrap {
+    max-width: 600px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
 }
